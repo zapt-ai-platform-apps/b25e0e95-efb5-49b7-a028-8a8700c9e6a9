@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../../core/components/Card';
-import { ExternalLinkIcon } from '@heroicons/react/24/outline';
+import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 
 export default function CompetitorAnalysis() {
   const competitors = [
@@ -106,7 +106,7 @@ export default function CompetitorAnalysis() {
                   className="text-sm text-blue-600 hover:text-blue-500"
                 >
                   Visit
-                  <ExternalLinkIcon className="inline-block ml-1 h-4 w-4" />
+                  <ArrowTopRightOnSquareIcon className="inline-block ml-1 h-4 w-4" />
                 </a>
               </div>
             }

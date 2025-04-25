@@ -53,7 +53,7 @@ export default function PixelSetup() {
                 </button>
               </div>
               <p className="text-xs text-gray-500 mt-2">
-                You can find your Tracking ID in your Google Analytics account under Admin > Property Settings.
+                You can find your Tracking ID in your Google Analytics account under Admin &gt; Property Settings.
               </p>
             </div>
           </div>

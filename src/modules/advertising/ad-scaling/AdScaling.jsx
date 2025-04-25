@@ -26,7 +26,7 @@ export default function AdScaling() {
                 <div className="bg-white p-3 rounded-md">
                   <h5 className="font-medium text-sm mb-2">Recommended Steps:</h5>
                   <ol className="list-decimal list-inside text-sm space-y-1 text-gray-700">
-                    <li>Identify campaigns with ROAS > 2.0</li>
+                    <li>Identify campaigns with ROAS &gt; 2.0</li>
                     <li>Increase daily budget by 20-30%</li>
                     <li>Monitor performance for 3-4 days</li>
                     <li>If stable, increase again by 20-30%</li>
