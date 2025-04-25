@@ -1,3 +1,85 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 29 78 216; /* blue-700 */
+    --color-primary-dark: 30 64 175; /* blue-800 */
+    --color-secondary: 79 70 229; /* indigo-600 */
+    --color-accent: 236 72 153; /* pink-500 */
+    --color-background: 255 255 255;
+    --color-surface: 249 250 251; /* gray-50 */
+    --color-text: 17 24 39; /* gray-900 */
+    --color-text-secondary: 107 114 128; /* gray-500 */
+    --color-success: 16 185 129; /* green-500 */
+    --color-warning: 245 158 11; /* amber-500 */
+    --color-error: 239 68 68; /* red-500 */
+  }
+
+  body {
+    @apply antialiased text-gray-900 bg-white;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+  
+  h1 {
+    @apply text-3xl md:text-4xl;
+  }
+  
+  h2 {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  h3 {
+    @apply text-xl md:text-2xl;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 text-sm font-medium transition-colors rounded-md 
+      focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none;
+  }
+  
+  .btn-primary {
+    @apply text-white bg-blue-700 hover:bg-blue-800 focus:ring-blue-600;
+  }
+  
+  .btn-secondary {
+    @apply text-blue-700 bg-blue-100 hover:bg-blue-200 focus:ring-blue-600;
+  }
+  
+  .btn-outline {
+    @apply border border-gray-300 text-gray-700 bg-white hover:bg-gray-50 focus:ring-blue-600;
+  }
+  
+  .card {
+    @apply overflow-hidden bg-white rounded-lg border border-gray-200;
+  }
+  
+  .card-header {
+    @apply px-4 py-5 border-b border-gray-200 bg-white sm:px-6;
+  }
+  
+  .card-body {
+    @apply px-4 py-5 sm:p-6;
+  }
+  
+  .form-input {
+    @apply block w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md 
+      shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm box-border;
+  }
+  
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+  }
+  
+  .form-hint {
+    @apply mt-1 text-sm text-gray-500;
+  }
+}
