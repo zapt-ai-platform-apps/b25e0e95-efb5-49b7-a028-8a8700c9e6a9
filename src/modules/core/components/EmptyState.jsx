@@ -1,16 +1,16 @@
 import React from 'react';
 
 export default function EmptyState({ 
-  title = "No data available", 
-  description = "Get started by creating your first item.",
-  icon: Icon,
+  title = 'No data available', 
+  description = 'There is no data to display at this time.', 
+  icon,
   action
 }) {
   return (
-    <div className="text-center py-12">
-      {Icon && (
-        <div className="mx-auto h-12 w-12 text-gray-400">
-          <Icon className="h-full w-full" />
+    <div className="text-center py-10">
+      {icon && (
+        <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-blue-100">
+          {icon}
         </div>
       )}
       <h3 className="mt-2 text-sm font-medium text-gray-900">{title}</h3>
