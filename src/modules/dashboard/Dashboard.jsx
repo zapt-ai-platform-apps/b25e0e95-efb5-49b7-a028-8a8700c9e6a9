@@ -15,12 +15,12 @@ import ProgressTracker from './components/ProgressTracker';
 import QuickStartGuide from './components/QuickStartGuide';
 
 export default function Dashboard() {
-  // Sample performance data
+  // Reset performance data to zero with Rupiah currency
   const stats = [
-    { id: 1, name: 'Active Campaigns', value: '3', change: '+16%', changeType: 'increase' },
-    { id: 2, name: 'Total Sales', value: '$1,245', change: '+23%', changeType: 'increase' },
-    { id: 3, name: 'Ad Spend', value: '$432', change: '+5%', changeType: 'increase' },
-    { id: 4, name: 'ROAS', value: '2.9x', change: '+12%', changeType: 'increase' },
+    { id: 1, name: 'Active Campaigns', value: '0', change: '0%', changeType: 'neutral' },
+    { id: 2, name: 'Total Sales', value: 'Rp 0', change: '0%', changeType: 'neutral' },
+    { id: 3, name: 'Ad Spend', value: 'Rp 0', change: '0%', changeType: 'neutral' },
+    { id: 4, name: 'ROAS', value: '0x', change: '0%', changeType: 'neutral' },
   ];
 
   // Main modules
@@ -74,17 +74,18 @@ export default function Dashboard() {
               <p className="mt-1 text-3xl font-semibold text-gray-900">{item.value}</p>
               <div className="mt-2">
                 <div className={`inline-flex items-center text-sm font-medium ${
-                  item.changeType === 'increase' ? 'text-green-600' : 'text-red-600'
+                  item.changeType === 'increase' ? 'text-green-600' : 
+                  item.changeType === 'decrease' ? 'text-red-600' : 'text-gray-500'
                 }`}>
                   {item.changeType === 'increase' ? (
                     <svg className="mr-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
                     </svg>
-                  ) : (
+                  ) : item.changeType === 'decrease' ? (
                     <svg className="mr-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                     </svg>
-                  )}
+                  ) : null}
                   <span>{item.change}</span>
                 </div>
               </div>
@@ -118,49 +119,10 @@ export default function Dashboard() {
           </Link>
         }
       >
-        <div className="space-y-4">
-          <div className="flex items-start">
-            <div className="flex-shrink-0">
-              <ShoppingBagIcon className="h-5 w-5 text-gray-400" />
-            </div>
-            <div className="ml-3 flex-1">
-              <p className="text-sm font-medium text-gray-900">New design uploaded</p>
-              <p className="text-sm text-gray-500">Summer Collection - Beach Vibes</p>
-              <p className="text-xs text-gray-400 mt-1">2 hours ago</p>
-            </div>
-          </div>
-          
-          <div className="flex items-start">
-            <div className="flex-shrink-0">
-              <CursorArrowRaysIcon className="h-5 w-5 text-gray-400" />
-            </div>
-            <div className="ml-3 flex-1">
-              <p className="text-sm font-medium text-gray-900">Ad campaign launched</p>
-              <p className="text-sm text-gray-500">Beach Vibes Collection - US Targeting</p>
-              <p className="text-xs text-gray-400 mt-1">Yesterday</p>
-            </div>
-          </div>
-          
-          <div className="flex items-start">
-            <div className="flex-shrink-0">
-              <UsersIcon className="h-5 w-5 text-gray-400" />
-            </div>
-            <div className="ml-3 flex-1">
-              <p className="text-sm font-medium text-gray-900">New audience created</p>
-              <p className="text-sm text-gray-500">Beach Lovers - Lookalike Audience</p>
-              <p className="text-xs text-gray-400 mt-1">2 days ago</p>
-            </div>
-          </div>
-          
-          <div className="flex items-start">
-            <div className="flex-shrink-0">
-              <CheckCircleIcon className="h-5 w-5 text-gray-400" />
-            </div>
-            <div className="ml-3 flex-1">
-              <p className="text-sm font-medium text-gray-900">Pixel tracking verified</p>
-              <p className="text-sm text-gray-500">Facebook Pixel successfully installed</p>
-              <p className="text-xs text-gray-400 mt-1">3 days ago</p>
-            </div>
+        <div className="flex items-center justify-center py-8">
+          <div className="text-center">
+            <p className="text-gray-500 mb-2">No activity recorded yet</p>
+            <p className="text-sm text-gray-400">Your recent activities will appear here once you start using the platform</p>
           </div>
         </div>
       </Card>

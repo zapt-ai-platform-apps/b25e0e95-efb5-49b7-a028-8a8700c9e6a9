@@ -15,31 +15,31 @@ export default function Fulfillment() {
           <Card>
             <div className="text-center">
               <h4 className="text-sm font-medium text-gray-500">Orders Today</h4>
-              <div className="mt-2 text-3xl font-bold text-gray-900">12</div>
-              <div className="mt-1 text-xs text-green-600">+33% from yesterday</div>
+              <div className="mt-2 text-3xl font-bold text-gray-900">0</div>
+              <div className="mt-1 text-xs text-gray-500">No change</div>
             </div>
           </Card>
           
           <Card>
             <div className="text-center">
               <h4 className="text-sm font-medium text-gray-500">Orders This Week</h4>
-              <div className="mt-2 text-3xl font-bold text-gray-900">73</div>
-              <div className="mt-1 text-xs text-green-600">+18% from last week</div>
+              <div className="mt-2 text-3xl font-bold text-gray-900">0</div>
+              <div className="mt-1 text-xs text-gray-500">No change</div>
             </div>
           </Card>
           
           <Card>
             <div className="text-center">
               <h4 className="text-sm font-medium text-gray-500">Pending Production</h4>
-              <div className="mt-2 text-3xl font-bold text-gray-900">27</div>
-              <div className="mt-1 text-xs text-gray-500">9 urgent</div>
+              <div className="mt-2 text-3xl font-bold text-gray-900">0</div>
+              <div className="mt-1 text-xs text-gray-500">No pending orders</div>
             </div>
           </Card>
           
           <Card>
             <div className="text-center">
               <h4 className="text-sm font-medium text-gray-500">Shipped Orders</h4>
-              <div className="mt-2 text-3xl font-bold text-gray-900">46</div>
+              <div className="mt-2 text-3xl font-bold text-gray-900">0</div>
               <div className="mt-1 text-xs text-gray-500">Last 7 days</div>
             </div>
           </Card>
@@ -72,47 +72,8 @@ export default function Fulfillment() {
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
                 <tr>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                    #ORD-8294
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    June 28, 2023
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    Sarah Johnson
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    2 × Plant Lover Tee (M, L)
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
-                      Processing
-                    </span>
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-blue-600">
-                    <a href="#" className="hover:text-blue-800 cursor-pointer">Details</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                    #ORD-8293
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    June 28, 2023
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    Michael Chen
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    1 × Dog Dad Tee (XL)
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
-                      Shipped
-                    </span>
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-blue-600">
-                    <a href="#" className="hover:text-blue-800 cursor-pointer">Track</a>
+                  <td colSpan="6" className="px-6 py-10 text-center text-sm text-gray-500">
+                    No orders found. New orders will appear here once customers place them.
                   </td>
                 </tr>
               </tbody>
@@ -134,14 +95,14 @@ export default function Fulfillment() {
                     <h4 className="font-medium text-gray-900">PrintfulPro Services</h4>
                     <p className="text-sm text-gray-500 mt-1">Print-on-demand t-shirts and apparel</p>
                     <div className="flex items-center mt-2">
-                      <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 mr-2">
-                        Connected
+                      <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800 mr-2">
+                        Setup Required
                       </span>
                       <span className="text-xs text-gray-500">48-72hr production time</span>
                     </div>
                   </div>
-                  <button className="btn btn-outline cursor-pointer text-sm">
-                    Settings
+                  <button className="btn btn-primary cursor-pointer text-sm">
+                    Connect
                   </button>
                 </div>
               </div>
@@ -183,7 +144,7 @@ export default function Fulfillment() {
                       <span className="block text-sm text-gray-500">7-10 business days</span>
                     </label>
                   </div>
-                  <span className="text-sm font-medium text-gray-900">$5.99</span>
+                  <span className="text-sm font-medium text-gray-900">Rp 90.000</span>
                 </div>
               </div>
               
@@ -201,7 +162,7 @@ export default function Fulfillment() {
                       <span className="block text-sm text-gray-500">3-5 business days</span>
                     </label>
                   </div>
-                  <span className="text-sm font-medium text-gray-900">$12.99</span>
+                  <span className="text-sm font-medium text-gray-900">Rp 200.000</span>
                 </div>
               </div>
               
@@ -219,7 +180,7 @@ export default function Fulfillment() {
                       <span className="block text-sm text-gray-500">10-14 business days</span>
                     </label>
                   </div>
-                  <span className="text-sm font-medium text-gray-900">$0.00</span>
+                  <span className="text-sm font-medium text-gray-900">Rp 0</span>
                 </div>
               </div>
               

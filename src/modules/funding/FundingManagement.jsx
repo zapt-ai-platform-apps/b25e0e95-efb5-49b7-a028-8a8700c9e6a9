@@ -15,24 +15,24 @@ export default function FundingManagement() {
           <Card>
             <div className="text-center">
               <h4 className="text-sm font-medium text-gray-500">Available Budget</h4>
-              <div className="mt-2 text-3xl font-bold text-gray-900">$5,432</div>
-              <div className="mt-1 text-xs text-green-600">+$1,500 from last month</div>
+              <div className="mt-2 text-3xl font-bold text-gray-900">Rp 0</div>
+              <div className="mt-1 text-xs text-gray-500">No changes yet</div>
             </div>
           </Card>
           
           <Card>
             <div className="text-center">
               <h4 className="text-sm font-medium text-gray-500">Ad Spend This Month</h4>
-              <div className="mt-2 text-3xl font-bold text-gray-900">$1,892</div>
-              <div className="mt-1 text-xs text-gray-500">Budget: $2,500</div>
+              <div className="mt-2 text-3xl font-bold text-gray-900">Rp 0</div>
+              <div className="mt-1 text-xs text-gray-500">Budget: Rp 0</div>
             </div>
           </Card>
           
           <Card>
             <div className="text-center">
               <h4 className="text-sm font-medium text-gray-500">Revenue This Month</h4>
-              <div className="mt-2 text-3xl font-bold text-gray-900">$4,678</div>
-              <div className="mt-1 text-xs text-green-600">ROAS: 2.47x</div>
+              <div className="mt-2 text-3xl font-bold text-gray-900">Rp 0</div>
+              <div className="mt-1 text-xs text-gray-500">ROAS: 0x</div>
             </div>
           </Card>
         </div>
@@ -46,40 +46,40 @@ export default function FundingManagement() {
                   <div>
                     <div className="flex justify-between text-sm mb-1">
                       <span className="font-medium">Facebook/Instagram Ads</span>
-                      <span>$1,500 (60%)</span>
+                      <span>Rp 0 (0%)</span>
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2">
-                      <div className="bg-blue-600 h-2 rounded-full" style={{width: '60%'}}></div>
+                      <div className="bg-blue-600 h-2 rounded-full" style={{width: '0%'}}></div>
                     </div>
                   </div>
                   
                   <div>
                     <div className="flex justify-between text-sm mb-1">
                       <span className="font-medium">TikTok Ads</span>
-                      <span>$500 (20%)</span>
+                      <span>Rp 0 (0%)</span>
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2">
-                      <div className="bg-pink-500 h-2 rounded-full" style={{width: '20%'}}></div>
+                      <div className="bg-pink-500 h-2 rounded-full" style={{width: '0%'}}></div>
                     </div>
                   </div>
                   
                   <div>
                     <div className="flex justify-between text-sm mb-1">
                       <span className="font-medium">Google Ads</span>
-                      <span>$375 (15%)</span>
+                      <span>Rp 0 (0%)</span>
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2">
-                      <div className="bg-green-500 h-2 rounded-full" style={{width: '15%'}}></div>
+                      <div className="bg-green-500 h-2 rounded-full" style={{width: '0%'}}></div>
                     </div>
                   </div>
                   
                   <div>
                     <div className="flex justify-between text-sm mb-1">
                       <span className="font-medium">Design & Content</span>
-                      <span>$125 (5%)</span>
+                      <span>Rp 0 (0%)</span>
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2">
-                      <div className="bg-purple-500 h-2 rounded-full" style={{width: '5%'}}></div>
+                      <div className="bg-purple-500 h-2 rounded-full" style={{width: '0%'}}></div>
                     </div>
                   </div>
                 </div>
@@ -90,22 +90,22 @@ export default function FundingManagement() {
                 <div className="space-y-4">
                   <div>
                     <label className="form-label">Facebook/Instagram Ads (%)</label>
-                    <input type="number" className="form-input box-border" placeholder="60" />
+                    <input type="number" className="form-input box-border" placeholder="0" />
                   </div>
                   
                   <div>
                     <label className="form-label">TikTok Ads (%)</label>
-                    <input type="number" className="form-input box-border" placeholder="20" />
+                    <input type="number" className="form-input box-border" placeholder="0" />
                   </div>
                   
                   <div>
                     <label className="form-label">Google Ads (%)</label>
-                    <input type="number" className="form-input box-border" placeholder="15" />
+                    <input type="number" className="form-input box-border" placeholder="0" />
                   </div>
                   
                   <div>
                     <label className="form-label">Design & Content (%)</label>
-                    <input type="number" className="form-input box-border" placeholder="5" />
+                    <input type="number" className="form-input box-border" placeholder="0" />
                   </div>
                   
                   <button className="btn btn-primary cursor-pointer w-full">
@@ -144,43 +144,8 @@ export default function FundingManagement() {
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
                 <tr>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                    June 2023
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    $2,500
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    $6,125
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    2.45x
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    $1,225
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    20%
-                  </td>
-                </tr>
-                <tr>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                    May 2023
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    $2,000
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    $5,400
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    2.70x
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    $1,080
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    20%
+                  <td colSpan="6" className="px-6 py-10 text-center text-sm text-gray-500">
+                    No performance data available yet. Financial metrics will appear here once you start running campaigns.
                   </td>
                 </tr>
               </tbody>
